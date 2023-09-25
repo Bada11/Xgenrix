@@ -4,7 +4,7 @@ import { remove } from "@/Redux/Cartslice";
 import Image from "next/image";
 import { useSession } from "next-auth/react";
 
-const index = () => {
+const Index = () => {
   const dispatch = useDispatch();
   const cartItems = useSelector((state) => state.cart);
   const { data: session } = useSession();
@@ -23,4 +23,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

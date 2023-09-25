@@ -1,7 +1,7 @@
 import Sidebar from "@/components/Sidebar";
 import React from "react";
 
-const index = () => {
+const Index = () => {
   return (
     <div className="bg-[#13131a] h-full xl:flex gap-5 text-white w-full">
       <Sidebar />
@@ -59,4 +59,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

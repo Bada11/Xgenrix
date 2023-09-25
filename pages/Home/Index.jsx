@@ -13,7 +13,7 @@ import img5 from "@/public/ai.webp";
 import img6 from "@/public/spider-samurai.jpeg";
 import img7 from "@/public/bike.webp";
 
-const index = () => {
+const Index = () => {
   const card = [
     {
       id: 1,
@@ -92,4 +92,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

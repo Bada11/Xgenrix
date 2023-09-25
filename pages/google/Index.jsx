@@ -4,7 +4,7 @@ import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import axios from "axios";
 
-const index = () => {
+const Index = () => {
   const { data: session } = useSession();
   const router = useRouter();
 
@@ -34,4 +34,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

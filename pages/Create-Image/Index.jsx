@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useSession } from "next-auth/react";
 import axios from "axios";
 
-const index = () => {
+const Index = () => {
   const { data: session } = useSession();
   const [name, setName] = useState(session?.user?.name);
   const [prompt, setPrompt] = useState();
@@ -73,4 +73,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
