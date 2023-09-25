@@ -35,6 +35,7 @@ const Searchbar = () => {
             width={35}
             height={35}
             className="rounded-full"
+            alt={session?.user?.name}
           />
         ) : (
           <BsPerson className="text-[30px] text-white" />

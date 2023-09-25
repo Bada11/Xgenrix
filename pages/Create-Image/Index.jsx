@@ -55,9 +55,9 @@ const Index = () => {
           <h1 className="pb-3">Image</h1>
           <div className="w-[250px] h-[250px] bg-[#1c1c24] rounded flex justify-center items-center">
             {!image ? (
-              <Image src={preview} width={150} height={150} />
+              <Image src={preview} width={150} height={150} alt="hi" />
             ) : (
-              <Image src={image} width={200} height={200} />
+              <Image src={image} width={200} height={200} alt='hi'/>
             )}
           </div>
         </label>

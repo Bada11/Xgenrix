@@ -26,7 +26,7 @@ const Main = () => {
         </Link>
       </div>
 
-      <Image src={img} width={500} height={500} className="" />
+      <Image src={img} width={500} height={500} className="" alt="img" />
     </div>
   );
 };
