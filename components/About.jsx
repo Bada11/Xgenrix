@@ -23,9 +23,7 @@ const About = () => {
   return (
     <div className="mt-10 xl:flex justify-between gap-5 w-full sm:p-10 p-5">
       {about.map((list) => (
-        <div className="flex">
           <Card key={list.id} {...list} />
-        </div>
       ))}
     </div>
   );
