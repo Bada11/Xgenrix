@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import axios from "axios";
 import Link from "next/link";
 
-const Index = () => {
+const index = () => {
   const { data: session } = useSession();
   const router = useRouter();
   const [name, setName] = useState("");
@@ -104,4 +104,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default index;
