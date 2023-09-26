@@ -6,7 +6,7 @@ import { GoHome } from "react-icons/go";
 import { RxDashboard } from "react-icons/rx";
 import { AiOutlineHeart, AiOutlineSetting } from "react-icons/ai";
 import { BiLogOut } from "react-icons/bi";
-import { useSession, signOut } from "next-auth/react";
+import { useSession, signOut,signIn } from "next-auth/react";
 import { useRouter } from "next/router";
 import { MdOutlinePayment } from "react-icons/md";
 import { BsPerson } from "react-icons/bs";
@@ -66,7 +66,7 @@ const Searchbar = () => {
                 Home
               </li>
             </Link>
-            <li className="flex gap-2">
+            <li className="flex gap-2" onClick={()=>signIn() >
               <RxDashboard className="text-[22px]" />
               Dashboard
             </li>
