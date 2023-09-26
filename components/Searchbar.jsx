@@ -38,7 +38,7 @@ const Searchbar = () => {
             alt={session?.user?.name}
           />
         ) : (
-          <BsPerson className="text-[30px] text-white" />
+          <BsPerson className="text-[40px] text-white" />
         )}
 
         {!showSidebar ? (

@@ -3,7 +3,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
   return (
-    <div className="p-5 flex justify-between  z-10">
+    <div className="p-5 flex justify-between  z-10 ">
       <div>
         <h1>
           Xgenrix <span className="logo">ai.</span>
@@ -16,7 +16,9 @@ const Navbar = () => {
           <li>Abouts</li>
           <li>faQs</li>
         </ul>
-        <button className="button p-2 rounded-full px-5 hover:opacity-50 transition">Sign In</button>
+        <button className="button p-2 rounded-full px-5 hover:opacity-50 transition">
+          Sign In
+        </button>
       </div>
 
       <AiOutlineMenu className="sm:xl:hidden text-[23px]" />

@@ -1,5 +1,6 @@
 import connectDB from "@/libs/mongoose";
 import Register from "@/models/register";
+import jwt from "jsonwebtoken";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
@@ -24,7 +25,23 @@ export default async function handler(req, res) {
         }
       });
 
-      return res.status(201).json(login);
+      const tokenData = {
+        id: login._id,
+        name: login.name,
+        email: login.email,
+      };
+
+      const token = jwt.sign(tokenData, process.env.TOKEN_SECRET, {
+        expiresIn: "1d",
+      });
+
+      const response = res.status(201).json(login);
+
+      response.cookies.set("token", token, {
+        httpOnly: true,
+      });
+
+      return response;
     }
   } catch (error) {
     console.log(error);
