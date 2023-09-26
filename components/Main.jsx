@@ -19,7 +19,7 @@ const Main = () => {
           unprecedented quality, speed, and style-consistency.
         </p>
 
-        <Link href="/SignIn">
+        <Link href="/google">
           <button className="button p-2 rounded-full px-5 mt-5 hover:opacity-50 transition w-full xl:w-auto">
             Continue
           </button>
